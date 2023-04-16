@@ -8,6 +8,24 @@
     display: flex;
     gap: 2em;
   }
+
+  .subMenu {
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    list-style-type: none;
+    margin-top: 1px;
+  }
+  
+  .subMenu li {
+    padding: 5px 10px;
+  }
+  
+  .subMenu li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  
 }
 
 /* モバイル */
@@ -88,6 +106,9 @@
     place-content: center;
     text-align: center;
   }
+    .subMenu li {
+    padding: 5px 10px;
+  }
 }
 
 /* ホバー */
@@ -109,48 +130,3 @@
 
 
 
-
-.header {
-  background-color: #f8f8f8;
-  padding: 10px;
-}
-
-.nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menuButton {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 5px 10px;
-}
-
-.menuButton:focus {
-  outline: none;
-}
-
-.subMenu {
-  position: absolute;
-  background-color: white;
-  padding: 5px;
-  list-style-type: none;
-  margin-top: 1px;
-}
-
-.subMenu li {
-  padding: 5px 10px;
-}
-
-.subMenu li:hover {
-  background-color: #f0f0f0;
-}
-
-.subMenu a {
-  color: #333;
-}
-
-.subMenu a:hover {
-}

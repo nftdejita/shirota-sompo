@@ -27,36 +27,42 @@ export default function Nav({products}) {
           }
         `}</style>
       )}
-      <ul className={styles.list}>
+      
+      <button className={styles.btn} onClick={toggleNav}>
+        <span className={styles.bar}></span>
+        <span className="sr-only">MENU</span>
+      </button>      
+      
+      <ul className={styles.list} onClick={closeNav}>
         <li>
-          <Link href="/">
+          <Link href="/" >
             ホーム
           </Link>
         </li>
 
-          <li
-            className={styles.menuItem}
-            onMouseEnter={() => setShowMenu(true)}
-            onMouseLeave={() => setShowMenu(false)}
-          >
-            <span>商品種類</span>
-            {showMenu && (
-              <ul className={styles.subMenu}>
-                <li>
-                  <Link href='/products/car'>自動車保険</Link>
-                </li>
-                <li>
-                  <Link href='/products/house'>火災保険</Link>
-                </li>
-                <li>
-                  <Link href='/products/medical'>傷害疾病保険</Link>
-                </li>
-                <li>
-                  <Link href='/products/travel'>旅行保険</Link>
-                </li>
-              </ul>
-            )}
-          </li>
+        <li
+          className={styles.menuItem}
+          onMouseEnter={() => setShowMenu(true)}
+          onMouseLeave={() => setShowMenu(false)}
+        >
+          <span>商品種類</span>
+          {(showMenu || navIsOpen) && (
+            <ul className={styles.subMenu}>
+              <li>
+                <Link href='/products/car'>自動車保険</Link>
+              </li>
+              <li>
+                <Link href='/products/house'>火災保険</Link>
+              </li>
+              <li>
+                <Link href='/products/medical'>傷害疾病保険</Link>
+              </li>
+              <li>
+                <Link href='/products/travel'>旅行保険</Link>
+              </li>
+            </ul>
+          )}
+        </li>
 
         <li>
           <Link href="/company">
