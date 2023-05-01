@@ -1,0 +1,50 @@
+.flame {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #333333;
+  border-radius: 10px;
+  background-color: darkgreen;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  margin-top: 4px;
+}
+
+.hand {
+  width: 81%;
+  margin-top: 4px;
+  padding: 0 5px;
+  position: relative;
+}
+
+.deck {
+  width: 19%;
+  margin-top: 4px;
+  padding: 0 5px;
+  position: relative;
+}
+
+.card {
+  box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.cardDark {
+  box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+  opacity: 0.6;
+}
+
+
+.blinkCard {
+  box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+  animation:blink 0.7s ease-in-out infinite alternate;
+}
+
+@keyframes blink{
+    0% {opacity:0.4;}
+    100% {opacity:1;}
+}

@@ -1,0 +1,67 @@
+.overlay {
+  /*　画面全体を覆う設定　*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  /*　画面の中央に要素を表示させる設定　*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  z-index: 2147483647;
+  width: 80%;
+  max-width: 600px; /* 最大幅 */
+  min-width: 240px; /* 最小幅 */
+  padding: 1em;
+  border: 1px solid #333333;
+  border-radius: 10px;
+  background: #fff;
+  text-align: center;
+}
+
+
+
+
+.messageBox p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.messageBox button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.yesButton {
+    background-color: #4caf50;
+    color: white;
+}
+
+.noButton {
+    background-color: #f44336;
+    color: white;
+}
+
+.yesButton:hover {
+    background-color: #45a049;
+}
+
+.noButton:hover {
+    background-color: #e53935;
+}

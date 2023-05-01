@@ -1,0 +1,64 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.logoWrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.activeLogo {
+  opacity: 1;
+}
+
+.gameTitle {
+  font-size: 48px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.startButton {
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.startButton:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+

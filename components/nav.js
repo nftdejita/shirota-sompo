@@ -65,6 +65,11 @@ export default function Nav({products}) {
         </li>
 
         <li>
+          <Link href="/tcg">
+            ゲーム
+          </Link>
+        </li>
+        <li>
           <Link href="/company">
             会社概要
           </Link>

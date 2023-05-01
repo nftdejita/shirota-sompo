@@ -106,7 +106,8 @@
     place-content: center;
     text-align: center;
   }
-    .subMenu li {
+  
+  .subMenu li {
     padding: 5px 10px;
   }
 }
